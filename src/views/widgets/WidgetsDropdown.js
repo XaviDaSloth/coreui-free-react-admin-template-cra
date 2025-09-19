@@ -46,7 +46,7 @@ const WidgetsDropdown = (props) => {
             <>
               26K{' '}
               <span className="fs-6 fw-normal">
-                (-12.4% <CIcon icon={cilArrowBottom} />)
+                (-202.4% <CIcon icon={cilArrowBottom} />)
               </span>
             </>
           }
@@ -77,7 +77,7 @@ const WidgetsDropdown = (props) => {
                     backgroundColor: 'transparent',
                     borderColor: 'rgba(255,255,255,.55)',
                     pointBackgroundColor: getStyle('--cui-primary'),
-                    data: [65, 59, 84, 84, 51, 55, 40],
+                    data: [60, 59, 84, 84, 51, 55, 40],
                   },
                 ],
               }}

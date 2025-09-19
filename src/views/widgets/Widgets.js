@@ -58,7 +58,7 @@ const Widgets = () => {
               <CWidgetStatsB
                 value="12.124"
                 title="Widget title"
-                progress={{ color: 'info', value: 89.9 }}
+                progress={{ color: 'info', value: 20 }}
                 text="Lorem ipsum dolor sit amet enim."
               />
             </CCol>

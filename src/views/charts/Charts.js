@@ -9,6 +9,10 @@ import {
   CChartRadar,
 } from '@coreui/react-chartjs'
 import { DocsCallout } from 'src/components'
+import { Chart } from 'chart.js'
+import annotationPlugin from 'chartjs-plugin-annotation'
+
+Chart.register(annotationPlugin)
 
 const Charts = () => {
   const random = () => Math.round(Math.random() * 100)
@@ -36,6 +40,23 @@ const Charts = () => {
                     data: [40, 20, 12, 39, 10, 40, 39, 80, 40],
                   },
                 ],
+              }}
+              options={{
+                plugins: {
+                  annotation: {
+                    annotations: {
+                      line1: {
+                        type: 'line',
+                        yMin: 30,
+                        yMax: 30,
+                        borderColor: 'rgba(24, 11, 13, 1)',
+                        borderWidth: 2,
+                        borderDash: [5, 5],
+                        label: { enabled: true, content: 'Benchmark 2', position: 'end' },
+                      },
+                    },
+                  },
+                },
               }}
               labels="months"
             />

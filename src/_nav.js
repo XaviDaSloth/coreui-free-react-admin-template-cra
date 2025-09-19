@@ -12,6 +12,7 @@ import {
   cilPuzzle,
   cilSpeedometer,
   cilStar,
+  cilSettings,
 } from '@coreui/icons'
 import { CNavGroup, CNavItem, CNavTitle } from '@coreui/react'
 
@@ -35,6 +36,20 @@ const _nav = [
     name: 'Colors',
     to: '/theme/colors',
     icon: <CIcon icon={cilDrop} customClassName="nav-icon" />,
+  },
+  {
+    component: CNavGroup,
+    name: 'Dashboard2',
+    to: '/base',
+    icon: <CIcon icon={cilDrop} customClassName="nav-icon" />,
+    items: [
+      {
+        component: CNavItem,
+        name: 'Simulation',
+        to: '/base/accordion',
+        icon: <CIcon icon={cilSettings} customClassName="nav-icon" />,
+      },
+    ],
   },
   {
     component: CNavItem,
@@ -124,6 +139,7 @@ const _nav = [
       },
     ],
   },
+
   {
     component: CNavGroup,
     name: 'Buttons',
